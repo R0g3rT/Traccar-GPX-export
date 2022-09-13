@@ -3,7 +3,7 @@
 
 <head>
     <link rel="stylesheet" href="style.css">
-    <link rel="icon" sizes="192x192" href="icon.png">
+    <link rel="icon" sizes="192x192" href="/logo/logo.svg">
 
     <title>Traccar Route von Json zu Gpx</title>
     <script src="main.js" async></script>
@@ -16,31 +16,31 @@
 
 
     <form>
-        <label for="vserver">Server:</label>
-        <input type="url" id="vserver" placeholder="http://yourtraccar.com">
+        <label for="vserver" >Server:</label>
+        <input type="url" id="vserver" placeholder="http://yourtraccar.com" required autofocus>
         <label for="vport">Port:</label>
-        <input type="number" id="vport" placeholder="your port">
+        <input type="number" id="vport" placeholder="your port" required>
 
         <label for="user">Email:</label>
-        <input type="email" id="user" placeholder="login">
+        <input type="email" id="user" placeholder="login" required>
 
         <label for="pass">Password:</label>
-        <input type="password" id="pass" placeholder="password">
+        <input type="password" id="pass" placeholder="password" required>
 
 
 
         <label for="geraet">Fahrzeug ID:</label>
-        <input type="number" id="geraet" placeholder="device id">
+        <input type="number" id="geraet" placeholder="device id" required>
 
         <label for="dname">Fahrzeug Name:</label>
-        <input type="text" id="dname" placeholder="device name">
+        <input type="text" id="dname" placeholder="device name" required>
 
 
         <label for="fdate">Start Route:</label>
-        <input type="datetime-local" id="fdate" placeholder="from date">
+        <input type="datetime-local" id="fdate" placeholder="from date" required>
 
         <label for="tdate">Ende Route:</label>
-        <input type="datetime-local" id="tdate" placeholder="to date">
+        <input type="datetime-local" id="tdate" placeholder="to date" required>
 
 
         <label for="autor">Ersteller:</label>
