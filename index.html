@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" sizes="192x192" href="icon.png">
+
+    <title>Traccar Route von Json zu Gpx</title>
+    <script src="main.js" async></script>
+
+</head>
+
+<body>
+
+    <h1>Traccar Route - Convert to Gpx</h1>
+
+
+    <form>
+        <label for="vserver">Server:</label>
+        <input type="url" id="vserver" placeholder="http://yourtraccar.com">
+        <label for="vport">Port:</label>
+        <input type="number" id="vport" placeholder="your port">
+
+        <label for="user">Email:</label>
+        <input type="email" id="user" placeholder="login">
+
+        <label for="pass">Password:</label>
+        <input type="password" id="pass" placeholder="password">
+
+
+
+        <label for="geraet">Fahrzeug ID:</label>
+        <input type="number" id="geraet" placeholder="device id">
+
+        <label for="dname">Fahrzeug Name:</label>
+        <input type="text" id="dname" placeholder="device name">
+
+
+        <label for="fdate">Start Route:</label>
+        <input type="datetime-local" id="fdate" placeholder="from date">
+
+        <label for="tdate">Ende Route:</label>
+        <input type="datetime-local" id="tdate" placeholder="to date">
+
+
+        <label for="autor">Ersteller:</label>
+        <input type="text" id="autor" placeholder="autor">
+
+        <label for="route">Routenbeschreibung:</label>
+        <input type="text" id="route" placeholder="long drive or drive to Saalfeld">
+
+
+
+        <label for="save">Speichername:</label>
+        <input type="text" id="save" placeholder="save name">
+
+
+        <button type="button" id="btn">Convert to Gpx</button>
+        <div id="webdaten"></div>
+    </form>
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>

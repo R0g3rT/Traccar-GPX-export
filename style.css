@@ -1,0 +1,52 @@
+body {
+  background-image: url('icon.png');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: right top;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+h1 {
+  text-decoration: underline;
+  text-align: center;
+
+
+}
+
+form {
+  margin: auto;
+  width: 30em;
+}
+
+input,
+label {
+  float: left;
+  width: 40%;
+
+}
+
+
+input {
+  margin: auto;
+  padding: .2em .5em;
+}
+
+label.input {
+  text-align: right;
+  line-height: 1.5;
+}
+
+::placeholder {
+  color: gray;
+  opacity: 1;
+  transition: opacity 1s;
+}
+
+:focus::placeholder {
+  opacity: 0;
+}
+
+button {
+  margin-top: 1.5em;
+  width: 30%;
+}
