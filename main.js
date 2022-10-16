@@ -14,7 +14,7 @@ btn.addEventListener("click", function () {
     let pass = document.querySelector("#pass").value;
     let auth2 = "Basic " + btoa(user + ":" + pass);
     let sdaten = new XMLHttpRequest();
-    sdaten.open("GET", server + ":" + port + "/api/positions?" + "deviceId=" + geraet + "&from=" + fdate + "Z&to=" + tdate + "Z");
+    sdaten.open("GET", server + ":" + port + "/api/reports/route?deviceId=" + geraet + "&from=" + fdate + "Z&to=" + tdate + "Z");
     sdaten.setRequestHeader("Accept", "application/json");
     sdaten.setRequestHeader("Authorization", auth2);
     sdaten.onreadystatechange = function () {
